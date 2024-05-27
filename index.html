@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="menu" id="menu-container">
+            <img src="menu.png" alt="Menu">
+            <div class="dropdown-content">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="logo" id="logo-container">
+            <a href="index.html"><img src="Moneylogo.png" alt="Logo"></a>
+        </div>
+        <div class="logo-text">
+            <h2>BIG BUCKS</h2>
+        </div>
+        <div class="center-text">
+            <span>More Bucks Means Big Bucks</span>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <section class="signup-form">
+        <h2>Signup Form:</h2>
+        <form id="signup-form" action="profile.html" method="post">
+            <fieldset>
+                <label for="firstName">First Name: *</label>
+                <input type="text" id="firstName" name="firstName" required><span class="error"></span><br>
+
+                <label for="lastName">Last Name: *</label>
+                <input type="text" id="lastName" name="lastName" required><span class="error"></span><br>
+
+                <label>Sex: *</label><br>
+                <input type="radio" id="Male" name="sex" value="Male" required>
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="sex" value="Female" required>
+                <label for="Female">Female</label>
+                <input type="radio" id="N/A" name="sex" value="N/A" required>
+                <label for="N/A">Prefer not to say</label><span class="error"></span><br>
+
+                <label for="email">Email Address: *</label>
+                <input type="email" id="email" name="email" required><span class="error"></span><br>
+
+                <label for="password">Password: *</label>
+                <input type="password" id="password" name="password" required><span class="error"></span><br>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber"><span class="error"></span><br>
+
+                <label for="supportReason">Why I support this campaign: *</label><br>
+                <textarea id="supportReason" name="supportReason" rows="4" cols="50" required></textarea><span class="error"></span><br>
+                <input type="submit" value="Sign Up Now">
+            </fieldset>
+        </form>
+    </section>
+    <section class="video">
+        <video id="response-video" width="560" height="315" autoplay loop muted>
+            <source src="BIG BUCKS BANK.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
